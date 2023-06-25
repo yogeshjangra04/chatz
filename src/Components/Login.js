@@ -38,7 +38,7 @@ const Login = () => {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://localhost:5000/api/v1/user/login',
+            url: 'https://nexus-backend-39dm.onrender.com/api/v1/user/login',
             headers: {
                 'Content-Type': 'application/json'
             },

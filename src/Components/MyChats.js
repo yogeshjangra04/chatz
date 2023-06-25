@@ -18,7 +18,7 @@ const MyChats = ({ fetchAgain }) => {
     let config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: 'http://localhost:5000/api/v1/chat/',
+        url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/',
         headers: {
             'Authorization': `Bearer ${user.token}`
         }

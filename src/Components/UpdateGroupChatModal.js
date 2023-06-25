@@ -44,7 +44,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:5000/api/v1/user/list?search=${search}`,
+            url: `https://nexus-backend-39dm.onrender.com/api/v1/user/list?search=${search}`,
             headers: {
                 'Authorization': `Bearer ${user.token}`,
             }
@@ -109,7 +109,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
         let config = {
             method: 'patch',
             maxBodyLength: Infinity,
-            url: 'http://localhost:5000/api/v1/chat/group/addUser',
+            url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/group/addUser',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`
@@ -178,7 +178,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
         let config = {
             method: 'patch',
             maxBodyLength: Infinity,
-            url: 'http://localhost:5000/api/v1/chat/group/removeUser',
+            url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/group/removeUser',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`
@@ -243,7 +243,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
         let config = {
             method: 'patch',
             maxBodyLength: Infinity,
-            url: 'http://localhost:5000/api/v1/chat/group/rename',
+            url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/group/rename',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`

@@ -41,7 +41,7 @@ const GroupChatModal = ({ children }) => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:5000/api/v1/user/list?search=${search}`,
+            url: `https://nexus-backend-39dm.onrender.com/api/v1/user/list?search=${search}`,
             headers: {
                 'Authorization': `Bearer ${user.token}`,
             }
@@ -129,7 +129,7 @@ const GroupChatModal = ({ children }) => {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'http://localhost:5000/api/v1/chat/group/create',
+            url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/group/create',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`

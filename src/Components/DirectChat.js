@@ -9,7 +9,7 @@ import axios from 'axios'
 import ScrollableChat from './ScrollableChat';
 import io from 'socket.io-client';
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://nexus-backend-39dm.onrender.com";
 var socket, selectedChat1;
 
 const DirectChat = ({ fetchAgain, setFetchAgain }) => {
@@ -32,7 +32,7 @@ const DirectChat = ({ fetchAgain, setFetchAgain }) => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:5000/api/v1/message/${selectedChat._id}`,
+            url: `https://nexus-backend-39dm.onrender.com/api/v1/message/${selectedChat._id}`,
             headers: {
                 'Authorization': `Bearer ${user.token}`
             }
@@ -81,7 +81,7 @@ const DirectChat = ({ fetchAgain, setFetchAgain }) => {
             let config = {
                 method: 'post',
                 maxBodyLength: Infinity,
-                url: 'http://localhost:5000/api/v1/message/',
+                url: 'https://nexus-backend-39dm.onrender.com/api/v1/message/',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${user.token}`
