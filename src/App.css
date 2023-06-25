@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;500&display=swap");
+
+.App {
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: #282c34;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
