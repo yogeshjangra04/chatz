@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tooltip, Box, Button, Text, Menu, MenuButton, Avatar, MenuItem, MenuList, Drawer, DrawerFooter, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, Input, useToast, Spinner } from '@chakra-ui/react'
 import { SearchIcon, BellIcon, ChevronDownIcon, SpinnerIcon } from "@chakra-ui/icons"
+import { Badge } from 'antd'
 import { useState } from 'react'
 import { ChatState } from '../context/chatProvider'
 import ProfileModal from './ProfileModal'
@@ -169,7 +170,9 @@ const SideDrawer = () => {
                 <div>
                     <Menu>
                         <MenuButton p={1} >
-                            <BellIcon fontSize="2xl" mr={4} />
+                            <Badge count={notifications.length}>
+                                <BellIcon fontSize="2xl" />
+                            </Badge>
                         </MenuButton>
                         <MenuList pl={2}>
                             {notifications.length > 0 ? (notifications.map((notif) => (
@@ -192,7 +195,7 @@ const SideDrawer = () => {
                     </Menu>
 
                     <Menu>
-                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                        <MenuButton ml={8} as={Button} rightIcon={<ChevronDownIcon />}>
 
                             <Avatar size="sm" cursor="pointer" name={user.name} src={user.dp !== "https://static.vecteezy.com/system/resources/thumbnails/009/734/564/small/default-avatar-profile-icon-of-social-media-user-vector.jpg" ? user.dp : null} />
 
