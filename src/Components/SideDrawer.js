@@ -49,7 +49,7 @@ const SideDrawer = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `https://nexus-backend-39dm.onrender.com/api/v1/user/list?search=${search}`,
+            url: `${process.env.REACT_APP_BACK_END}/api/v1/user/list?search=${search}`,
             headers: {
                 'Authorization': `Bearer ${user.token}`,
             }
@@ -90,7 +90,7 @@ const SideDrawer = () => {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'https://nexus-backend-39dm.onrender.com/api/v1/chat/',
+            url: `${process.env.REACT_APP_BACK_END}/api/v1/chat/`,
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`
