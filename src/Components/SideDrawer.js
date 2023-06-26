@@ -164,7 +164,7 @@ const SideDrawer = () => {
 
                 </Tooltip>
                 <Text fontSize='xl' fontFamily='Noto Sans'>
-                    Nexus
+                    chatZ
                 </Text>
 
                 <div>

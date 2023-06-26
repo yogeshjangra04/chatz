@@ -38,7 +38,7 @@ export default function Homepage() {
             borderWidth="1px"
         >
             <Text fontSize="2xl" fontFamily="Noto Sans">
-                Nexus Chat
+                chatZ
             </Text>
         </Box>
         <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
