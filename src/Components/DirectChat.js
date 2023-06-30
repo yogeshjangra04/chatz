@@ -124,7 +124,7 @@ const DirectChat = ({ fetchAgain, setFetchAgain }) => {
 
     useEffect(() => {
         console.log("useEffect called")
-        socket = io(process.env.REACT_APP_BACK_END);
+        socket = io(`${process.env.REACT_APP_BACK_END}`);
 
         socket.emit('setup', user);
         socket.on('connected', () => { setSocketConnected(true) })
